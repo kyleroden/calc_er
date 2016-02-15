@@ -1,0 +1,43 @@
+.container {
+	max-width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.headline {
+	color: tomato;
+	margin: auto;
+}
+ul {
+	list-style-type: none;
+}
+.nav {
+	margin-left: -3%;
+}
+.nav-container {
+	display: flex;
+	justify-content: space-around;
+}
+.nav li {
+	color: white;
+	background-color: #ffbf47;
+	display: inline-block;
+	padding: 9px;
+	margin: 4px;
+}
+
+li:first-child {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+li:last-child {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+#intro-text {
+	font-size: 1.4em;
+}
