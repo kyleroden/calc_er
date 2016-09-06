@@ -1,3 +1,7 @@
+a {
+  cursor: pointer;
+}
+
 #wrapper {
   text-align: center;
   height: 100vh;
@@ -29,4 +33,27 @@
 #functions_container {
   background-color: yellow;
   width: 25%;
+}
+#functions_container a,
+#numbers_container a {
+    display: block;
+    width: 45px;
+    height: 45px;
+    float: left;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 3em;
+    }
+#total_container {
+  font-size: 2em;
+  height: 70px;
+  width: 260px;
+  margin-bottom: 5px;
+  padding: 0 5px;
+  text-align: right;
+}
+#numbers_container > *,
+#functions_container > * {
+  margin: 0px;
 }
