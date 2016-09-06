@@ -1,0 +1,32 @@
+#wrapper {
+  text-align: center;
+  height: 100vh;
+}
+
+#calc_container {
+  border-style: ridge;
+  border-color: #345BA0;
+  border-width: 1em;
+}
+#calc_results {
+  width: 100%;
+  height: 10vh;
+}
+#button_container {
+  height: 50vh;
+}
+
+#numbers_container {
+  background-color: red;
+  width: 75%;
+}
+.number_button {
+  width: 3em;
+  height: 3em;
+  background-color: grey;
+}
+
+#functions_container {
+  background-color: yellow;
+  width: 25%;
+}
