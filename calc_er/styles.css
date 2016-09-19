@@ -14,6 +14,17 @@ a {
   width: 100%;
   height: 10vh;
 }
+#current_operation {
+  height: 2em;
+  width: 100%;
+  font-size: 0.8em;
+  background-color: white;
+  padding: 0 5px;
+  text-align: right;
+  margin-bottom: 5px;
+  color: grey;
+}
+/*buttons*/
 #button_container {
   display: flex;
   /*height: 50vh;*/
@@ -25,10 +36,21 @@ a {
 .number_button {
   width: 3em;
   height: 3em;
-  background-color: grey;
+  box-shadow: 0 6px rgb(171,69,69);
+  color: white;
+  background: rgb(203,78,78);
+}
+.number_button:hover {
+	box-shadow: 0 4px #ab3c3c;
+	/*top: 2px;*/
+}
+.clear_button {
+  background: #D4D266;
+  width: 3em;
+  height: 3em;
 }
 #functions_container {
-  background-color: yellow;
+  background-color: #2B6E98;
   max-width: 170px;
 }
 #functions_container a {
@@ -62,7 +84,6 @@ a {
   font-size: 2em;
   height: 70px;
   width: 100%;
-  margin-bottom: 5px;
   padding: 0 5px;
   text-align: right;
   background-color: white;

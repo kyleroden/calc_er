@@ -1,13 +1,14 @@
 $(document).ready(function() {
   $("#wrapper").css("background-color", "cornflowerblue");
-
-  var adder = function(num1, num2) {
-    return num1 + num2;
+  //check if the current_operation div can be written to (delete this later)
+  $("#current_operation").text('test');
+  var write_current_operation = function(val){
+    var current_input  = '';
+    current_input += val;
+    $("#current_operation").text(current_input);
+    console.log(val);
   }
 
-  var subtractor = function(num1, num2) {
-    return num1 - num2;
-  }
   var number = '';
   var newnumber = '';
   var operator = '';
@@ -18,13 +19,15 @@ $(document).ready(function() {
   $("#numbers_container a").not("#clear, #allclear").click(function() {
     number += $(this).html();
     $(totaldiv).text(number);
+    write_current_operation(number);
   });
 
   $("#functions_container > a").not("#equals").click(function() {
     operator = $(this).text();
     newnumber = number;
     number = '';
-    totaldiv.text('0');
+    write_current_operation(operator);
+    //totaldiv.text('0');
   });
 
   $("#clear").click(function() {
